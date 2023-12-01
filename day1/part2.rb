@@ -33,8 +33,8 @@ def getNum(s)
     nine:9,
     zero:0
     }
-    if (Integer(s[0]) rescue nil) then
-        return Integer(s[0])
+    if (i = Integer(s[0]) rescue nil) then
+        return i
     end
     number_hash.keys.each do
         | x |
