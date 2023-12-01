@@ -45,7 +45,6 @@ def getNum(s)
     return nil
 end
 
-out = 0
 print input.lines.map {
     | l |
     nums = l.each_char().each_cons_to_end(5).map { | s | getNum s.join "" }.filter { | s | s != nil }
